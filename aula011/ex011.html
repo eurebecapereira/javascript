@@ -5,27 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nacionalidade</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        background-color: rgb(71, 185, 80);
+      }
+      h1.destak{
+        color: rgb(13, 77, 13);
+      }
+
+      #txtp {
+        color: rgb(0, 0, 0);
+      }
+
+      #verificar {
+        background-color: darkgreen;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
 </head>
 <body>
-    <h1>Identificador de Nacionalidade</h1>
-    Digite seu País de Nascimento:  <input type="text" value="" id="txtp">
-    <input type="button" value="VERFICAR" id="verificar" onclick="verificar()">
-    <div id="res">
+  <h1 class="destak">Identificador de Nacionalidade</h1>
+  Digite seu País de Nascimento:  <input type="text" value="Digite aqui" id="txtp">
+  <input type="button" value="VERFICAR" id="verificar" onclick="verificar()">
+  <div id="res">
     
-    </div>
+</div>
     
-    <script>
-        function verificar() {
-          var país = document.querySelector('input#txtp')
-          var res = document.querySelector('div#res')
-          var nacionalidade = String(país.value)
+  <script>
+    function verificar() {
+    var país = document.querySelector('input#txtp')
+    var res = document.querySelector('div#res')
+    var nacionalidade = String(país.value)
     
-          res.innerHTML += `<p>Você Nasceu em: ${nacionalidade}.</p>`
-          if (nacionalidade == 'Brasil') {
-            res.innerHTML += `<p>Portanto você é Brasileiro.</p>`
-          } else {
-            res.innerHTML += `<p>Portanto você é estrangeiro.</p>`
-          }
-        }
-      </script>
+    res.innerHTML += `<p>Você Nasceu em: ${nacionalidade}.</p>`
+    if (nacionalidade == 'Brasil') {
+    res.innerHTML += `<p>Portanto você é Brasileiro.</p>`
+    } else {
+    res.innerHTML += `<p>Portanto você é estrangeiro.</p>`
+    }
+    }
+  </script>
 </html>
