@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação de Sangue</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+        body {
+            font-family: 'Lora';
+            background-color: cornsilk;
+            text-align: left;
+            min-height: 150px;
+            
+        }
+        h1 {
+            font-family: 'Lora';
+            text-align: center;
+        }
+        p {
+            width: 50vw;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>SEJA UM DOADOR</h1>
+        <p>Uma das dúvidas de quem deseja doar sangue é: "Para que pessoas serve meu tipo sanguíneo?" Pensando nisso foi desenvolvido este programa, para que você possa responder a esta pergunta. Além disso você tem acesso ao endereços dos postos de coleta.</p>
+        <p> O uso é bem simples, insira seu tipo sanguíneo abaixo, clique em verificar e descubra para quem você pode doar e de quem você pode receber.</p>
+        Digite seu tipo sanguíneo: <input type="text" name="" id="tipo">
+        <input type="button" value="VERIFICAR" id="verificar" onclick="resultado()">
+        <div id="res">
+        </div>
+
+    </div>
+    <script>
+        function verificar()
+        var tipo = document.querySelector('input#tipo')
+        var res = document.querySelector('div#res')
+        var sangue = Text('tipo.value')
+
+        res.innerHTML += `<p> Parabéns! Seu tipo sanguíneo é ${sangue}!</p>`
+        if (sangue == 'A+') {
+            
+        }
+        
+    </script>
+</body>
+</html>
