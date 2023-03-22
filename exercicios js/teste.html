@@ -6,47 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doação de Sangue</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
         body {
             font-family: 'Lora';
-            background-color: cornsilk;
-            text-align: left;
+            background-color: rgb(182, 143, 151);
             min-height: 150px;
             
         }
         h1 {
             font-family: 'Lora';
             text-align: center;
+            
         }
         p {
-            width: 50vw;
+            text-align: justify;
+            left: 100px;
+            right: 100px;
+            width: 800px;
             
+        }
+        article {
+            background-color: blanchedalmond;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            right: 100px;
+            width: 1000px;
+        }
+        div.esq {
+            text-align: right;
+        }
+
+        div.dire {
+            text-align: right;
+
+        }
+        div.container {
+            background-color: rgb(229, 149, 149);
+        }
+        #verificar {
+            background-color: rgb(234, 159, 159);
+        }
+
+        footer {
+            position: relative;
         }
         
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>SEJA UM DOADOR</h1>
-        <p>Uma das dúvidas de quem deseja doar sangue é: "Para que pessoas serve meu tipo sanguíneo?" Pensando nisso foi desenvolvido este programa, para que você possa responder a esta pergunta. Além disso você tem acesso ao endereços dos postos de coleta.</p>
-        <p> O uso é bem simples, insira seu tipo sanguíneo abaixo, clique em verificar e descubra para quem você pode doar e de quem você pode receber.</p>
-        Digite seu tipo sanguíneo: <input type="text" name="" id="tipo">
-        <input type="button" value="VERIFICAR" id="verificar" onclick="resultado()">
-        <div id="res">
-        </div>
+        
 
     </div>
-    <script>
-        function verificar()
-        var tipo = document.querySelector('input#tipo')
-        var res = document.querySelector('div#res')
-        var sangue = Text('tipo.value')
+    
+        <article>
+            <p>Uma das dúvidas de quem deseja doar sangue é: "Para que pessoas serve meu tipo sanguíneo?" Pensando nisso foi desenvolvido este programa, para que você possa responder a esta pergunta. Além disso você tem acesso ao endereços dos postos de coleta.</p>
+            <p> O uso é bem simples, insira seu tipo sanguíneo abaixo, clique em verificar e descubra para quem você pode doar e de quem você pode receber.</p>
+            Digite seu tipo sanguíneo: <input type="text" name="" id="tipo">
+            <input type="button" value="VERIFICAR" id="verificar" onclick="verificar()">
+        </article>
+        <div id="res">
 
-        res.innerHTML += `<p> Parabéns! Seu tipo sanguíneo é ${sangue}!</p>`
-        if (sangue == 'A+') {
+        </div>
+    <script>
+        //Preciso consertar muita coisa
+        //mas o código está funcionando
+        //procurar uma forma de fazer o input aceitar sinal de +
+        function verificar() {
+            var sge = window.document.querySelector('#tipo')
+            var res = window.document.querySelector('div#res')
+            var sangue = String(sge.value)
+            res.innerHTML = `<p>Parabéns! Seu tipo sanguíneo é ${sangue}!</p>`
+            if (sangue == 'A Positivo') {
+                res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: AB+ A+!`
+
+            }
             
+            if (sangue == 'A Negativo') {
+                res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: A+, AB+, A-, AB-!`
+            }
+            if (sangue == 'B Positivo') {
+                res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: B+ e AB+!`
+            }
+            if (sangue == 'B Negativo') {
+                res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: B+ e AB+B+, AB+, B-, AB-!`
+            }
+            if (sangue == 'O Positivo') {
+                res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: O+, A+, B+, AB+!`
+            }
+            if (sangue == 'O Negativo') {
+                res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: O+, A+, B+, AB+, A-, B-, AB-, O-!`
+            }
+            if (sangue == 'AB Positivo') {
+                res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: AB+!`
+            }
+            if (sangue == 'AB Negativo') {
+                res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: AB+ e AB-!`
+            }
         }
+
         
     </script>
+    
+    <footer>Endereços</footer>
 </body>
 </html>
