@@ -7,68 +7,78 @@
     <title>Doação de Sangue</title>
     <style>
         body {
-            font-family: 'Lora';
-            background-color: rgb(182, 143, 151);
-            min-height: 150px;
-            
+            background-color: #FAD9D1;
+            font-size: large;
         }
-        h1 {
-            font-family: 'Lora';
+        section {
+            background-color: #FAD9D1;
+            height: 50vw;
+            margin: 20px 20px;
+        }
+        nav {
             text-align: center;
-            
+            font-size: 30px;
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+
+        header {
+            background-color: #993866;
+            line-height: 1.5;
+            border-radius: 8px;
+
+        }
+        aside {
+            background-color: #eb95bd;
+;
+            border-radius: 8px;
+        }
+        li {
+            list-style-type: square;
         }
         p {
+            font-family: Arial, Helvetica, sans-serif;
             text-align: justify;
-            left: 100px;
-            right: 100px;
-            width: 800px;
-            
-        }
-        article {
-            background-color: blanchedalmond;
-            position: relative;
-            top: 100px;
-            left: 100px;
-            right: 100px;
-            width: 1000px;
-        }
-        div.esq {
-            text-align: right;
         }
 
-        div.dire {
-            text-align: right;
-
-        }
-        div.container {
-            background-color: rgb(229, 149, 149);
-        }
-        #verificar {
-            background-color: rgb(234, 159, 159);
-        }
-
-        footer {
-            position: relative;
+        p > .rodape {
+            text-align: center;
+            font-size: 8px;
         }
         
+            
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>SEJA UM DOADOR</h1>
-        
-
-    </div>
-    
+    <section>
+        <header>
+            <nav>Doação de Sangue</nav>
+        </header>
         <article>
-            <p>Uma das dúvidas de quem deseja doar sangue é: "Para que pessoas serve meu tipo sanguíneo?" Pensando nisso foi desenvolvido este programa, para que você possa responder a esta pergunta. Além disso você tem acesso ao endereços dos postos de coleta.</p>
+            <p>Uma das dúvidas de quem deseja doar sangue é: "Para que pessoas serve meu tipo sanguíneo?" Pensando nisso foi desenvolvido este programa, para que você possa responder a esta pergunta. Além disso você tem acesso ao endereços dos Postos de Coleta.</p>
             <p> O uso é bem simples, insira seu tipo sanguíneo abaixo, clique em verificar e descubra para quem você pode doar e de quem você pode receber.</p>
             Digite seu tipo sanguíneo: <input type="text" name="" id="tipo">
             <input type="button" value="VERIFICAR" id="verificar" onclick="verificar()">
+            <p id="ex"><i>Ex: Se seu tipo sanguíneo é A+, você deverá digitar "A Positivo".</i></p>
+        
+            <div id="res">
+            </div>
+            <p>Agora que você sabe para quem você pode doar, é só se dirigir ao Posto de Coleta mais próximo de você, e fazer sua doação!</p>
         </article>
-        <div id="res">
-
-        </div>
+            <aside>
+                <h1>Tipos Sanguíneos:</h1>
+                <ul>
+                    <li>A+</li>
+                    <li>A-</li>
+                    <li>B+</li>
+                    <li>B-</li>
+                    <li>O+</li>
+                    <li>O-</li>
+                    <li>AB+</li>
+                    <li>AB-</li>
+                </ul>
+            </aside>
+    </section>
     <script>
         //Preciso consertar muita coisa
         //mas o código está funcionando
@@ -97,6 +107,7 @@
             }
             if (sangue == 'O Negativo') {
                 res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: O+, A+, B+, AB+, A-, B-, AB-, O-!`
+                res.innerHTML += ` Que maravilha você é um doador universal!`
             }
             if (sangue == 'AB Positivo') {
                 res.innerHTML += `Você pode doar para pessoas de tipo sanguíneo: AB+!`
@@ -108,7 +119,7 @@
 
         
     </script>
-    
-    <footer>Endereços</footer>
+<footer id="endereco"><strong>Endereços dos Posto de Coleta:</strong> Hemoce: Av. José Bastos, 3390 - Rodolfo Teófilo, Fortaleza - CE, 60431-086 | Fugisan: Barão de Studart, 2626 - Dionísio Torres, Fortaleza - CE, 60120-375</footer>
+<footer><p class="rodape">DESENVOLVIDO POR REBECA PEREIRA</p></footer>
 </body>
 </html>
