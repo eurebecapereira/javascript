@@ -1,0 +1,47 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-title {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+}
+
+.header {
+    display: flex;
+    background-color: #0505080a;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+
+}
+
+.header__nav ul {
+    display: flex; /*isto fez com q os itens ficassem lado a lado, e não em coluna*/
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px; /*isto fez com que ficasse um espaço proporcional entre um item e outro*/
+}
+
+
+
+div.container {
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #d3e912;
+}
+
+div.contato {
+    margin: 10px;
+}
