@@ -1,5 +1,6 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #023535
 }
 
 .main-title {
@@ -15,6 +16,12 @@ body {
     padding: 16px;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #050508;
 }
 
 .header__logo {
@@ -22,6 +29,7 @@ body {
     text-transform: uppercase;
     margin-left: 16px;
     letter-spacing: 2px;
+    
 
 }
 
@@ -32,16 +40,24 @@ body {
     gap: 16px; /*isto fez com que ficasse um espaço proporcional entre um item e outro*/
 }
 
-
+div.catalogo {
+    color: white;
+    display: flex;
+}
 
 div.container {
+    display: flex;
+    gap: 16px;
+    height: 600px;
     margin-top: 50px;
     text-align: center;
     align-items: center;
     border-radius: 6px;
-    background-color: #d3e912;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
-div.contato {
-    margin: 10px;
+
+
+footer {
+    text-align: center;
 }
