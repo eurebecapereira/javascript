@@ -1,6 +1,6 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #023535
+    background-color: #10454F
 }
 
 .main-title {
@@ -12,11 +12,11 @@ body {
 
 .header {
     display: flex;
-    background-color: #0505080a;
+    background-color: #10454F;
     padding: 16px;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #BDE038;
 }
 
 a {
@@ -31,6 +31,23 @@ a {
     letter-spacing: 2px;
     
 
+}
+
+li > a {
+    background-color: black;
+    border-radius: 3px;
+    color: #BDE038;
+    padding: 8px;
+}
+
+a:hover{
+    background-color: #10454F;
+    transition-duration: 0.1s;
+}
+
+h1 {
+    text-align: center;
+    background-color: #BDE038;
 }
 
 .header__nav ul {
@@ -53,11 +70,22 @@ div.container {
     text-align: center;
     align-items: center;
     border-radius: 6px;
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-color: 10454F;
 }
 
+header > img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80%;
+}
 
+.cat {
+    width: 250px;
+    height: 250px;
+    padding: auto;
+}
 
 footer {
+    background-color: #BDE038;
     text-align: center;
 }
