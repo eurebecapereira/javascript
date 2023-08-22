@@ -57,26 +57,21 @@ h1 {
     gap: 16px; /*isto fez com que ficasse um espaço proporcional entre um item e outro*/
 }
 
-div.catalogo {
-    color: white;
-    display: flex;
-}
+
 
 div.container {
-    display: flex;
+    display: flexbox;
     gap: 16px;
-    height: 600px;
+    color: rgb(10, 10, 10);
+    height: 100vh;
     margin-top: 50px;
-    text-align: center;
-    align-items: center;
-    border-radius: 6px;
     background-color: 10454F;
 }
 
 header > img {
     width: 160px;
     height: 160px;
-    border-radius: 80%;
+    border-radius: 15%;
 }
 
 .cat {
@@ -86,6 +81,7 @@ header > img {
 }
 
 footer {
-    background-color: #BDE038;
+    background-color: #c4e23bea;
     text-align: center;
+    font-size: small;
 }
