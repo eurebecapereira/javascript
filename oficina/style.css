@@ -1,27 +1,17 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #10454F
+    background-color: #2018185d;
+
 }
 
-.main-title {
-    font-size: 62px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 46px 0;
-}
 
 .header {
     display: flex;
-    background-color: #10454F;
+    background-color: #0707077a;
     padding: 16px;
     justify-content: space-between;
     align-items: center;
-    background-color: #BDE038;
-}
 
-a {
-    text-decoration: none;
-    color: #050508;
 }
 
 .header__logo {
@@ -29,43 +19,6 @@ a {
     text-transform: uppercase;
     margin-left: 16px;
     letter-spacing: 2px;
-    
-
-}
-
-li > a {
-    background-color: black;
-    border-radius: 3px;
-    color: #BDE038;
-    padding: 8px;
-}
-
-a:hover{
-    background-color: #10454F;
-    transition-duration: 0.1s;
-}
-
-h1 {
-    text-align: center;
-    background-color: #BDE038;
-}
-
-.header__nav ul {
-    display: flex; /*isto fez com q os itens ficassem lado a lado, e não em coluna*/
-    list-style-type: none;
-    font-size: 18px;
-    gap: 16px; /*isto fez com que ficasse um espaço proporcional entre um item e outro*/
-}
-
-
-
-div.container {
-    display: flexbox;
-    gap: 16px;
-    color: rgb(10, 10, 10);
-    height: 100vh;
-    margin-top: 50px;
-    background-color: 10454F;
 }
 
 header > img {
@@ -73,15 +26,56 @@ header > img {
     height: 160px;
     border-radius: 15%;
 }
+.header__nav ul {
+    display: flex; /*isto fez com q os itens ficassem lado a lado, e não em coluna*/
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px; /*isto fez com que ficasse um espaço proporcional entre um item e outro*/
+}
+
+a {
+    text-decoration: none;
+    color: #050508;
+}
+
+li > a {
+    background-color: black;
+    border-radius: 3px;
+    color: #f9faf7;
+    padding: 8px;
+}
+
+a:hover{
+    background-color: #010a0ebd;
+    transition-duration: 0.1s;
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+    background-color: black;
+}
+
+div.container {
+    display: flex;
+    gap: 16px;
+    color: rgb(10, 10, 10);
+    margin-top: 10px;
+    background-color: #0707077a;
+    flex-wrap: wrap;
+}
+section {
+    width: 100%;
+    padding-bottom: 10px;
+}
 
 .cat {
     width: 250px;
     height: 250px;
-    padding: auto;
 }
 
 footer {
-    background-color: #c4e23bea;
+    background-color: #0707077a;
     text-align: center;
     font-size: small;
 }
