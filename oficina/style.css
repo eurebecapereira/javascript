@@ -1,9 +1,12 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2018185d;
-
 }
 
+main {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+}
 
 .header {
     display: flex;
@@ -11,6 +14,7 @@ body {
     padding: 16px;
     justify-content: space-between;
     align-items: center;
+    height: 300px; /*deixar o header como uma faixa larga*/
 
 }
 
@@ -46,36 +50,53 @@ li > a {
 }
 
 a:hover{
-    background-color: #010a0ebd;
+    background-color: rgb(254, 250, 250);
     transition-duration: 0.1s;
+    color: #050508;
 }
 
-h1 {
-    color: azure;
-    text-align: center;
-    background-color: black;
-}
 
 div.container {
     display: flex;
     gap: 16px;
     color: rgb(10, 10, 10);
     margin-top: 10px;
-    background-color: #0707077a;
+    background-color: #f7f4f4;
     flex-wrap: wrap;
 }
+
 section {
     width: 100%;
     padding-bottom: 10px;
 }
 
+.titulo {
+    color: azure;
+    text-align: center;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px;
+}
 .cat {
+    padding: 5px;
     width: 250px;
     height: 250px;
+    
 }
 
+
+
 footer {
-    background-color: #0707077a;
+    color: white;
+    background-color: black;
     text-align: center;
     font-size: small;
+    height: 150px;
+    
 }
+
+p {
+    text-align: center;
+}
+
