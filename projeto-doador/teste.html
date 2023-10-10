@@ -6,34 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doação de Sangue</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
 
     <header>
-        VERIFICADOR DE TIPO SANGUÍNEO
-    </header>
-    <nav>
-        <a href="#">HOME</a>
-        <a href="#">SAIBA MAIS</a>
-        <a href="#">HEMOCE</a>
-        <a href="#">FUJISAN</a>
-        <div class="animation start-home"></div>
-    </nav>
-    <article>
-        <form action=""method="">
-            <fieldset>
-                <p>Uma das dúvidas de quem deseja doar sangue é: "Para que pessoas serve meu tipo sanguíneo?" Pensando nisso foi desenvolvido este programa, para que você possa responder a esta pergunta. Além disso você tem acesso ao endereços dos Postos de Coleta.</p>
-                <p> O uso é bem simples, insira seu tipo sanguíneo abaixo, clique em verificar e descubra para quem você pode doar e de quem você pode receber.</p>
-                    Digite seu tipo sanguíneo: <input type="text" name="" id="tipo">
-                <input type="button" value="VERIFICAR" id="verificar" onclick="verificar()">
-                <p id="ex"><i>Ex: Se seu tipo sanguíneo é A+, você deverá digitar "A Positivo".</i></p>
-            </fieldset>
-        </form>
+        <div class="logo">VERIFICADOR DE TIPO SANGUÍNEO</div>
+
+        <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SAIBA MAIS</a></li>
+                <li><a href="#">HEMOCE</a></li>
+                <li><a href="#">FUJISAN</a></li>
+            </ul>
         
-        <div id="res">
-        </div>
-        <p>Agora que você sabe para quem você pode doar, é só se dirigir ao Posto de Coleta mais próximo de você, e fazer sua doação!</p>
+        </nav>
+    </div>
+    </header>
+    
+    <article>
+        <p>Uma das dúvidas de quem deseja doar sangue é: "Para que pessoas serve meu tipo sanguíneo?" Pensando nisso foi desenvolvido este programa, para que você possa responder a esta pergunta. Além disso você tem acesso ao endereços dos Postos de Coleta.</p>
+        <p> O uso é bem simples, insira seu tipo sanguíneo abaixo, clique em verificar e descubra para quem você pode doar e de quem você pode receber.</p>
+        
     </article>
+
+    <section>
+        <p>Digite seu tipo sanguíneo:</p> 
+            <input type="text" name="" id="tipo"><input type="button" value="VERIFICAR" id="verificar" onclick="verificar()">
+            <p id="ex"><i>Ex: Se seu tipo sanguíneo é A+, você deverá digitar "A Positivo".</i></p>
+        
+        <div id="res"></div>
+        <p>Agora que você sabe para quem você pode doar, é só se dirigir ao Posto de Coleta mais próximo de você, e fazer sua doação!</p>
+    </section>
     <aside>
         <h1>Tipos Sanguíneos:</h1>
         <ul>
@@ -47,8 +53,16 @@
             <li>AB-</li>
         </ul>
     </aside>
+
+<div class="rodape">
+    <strong>Endereços dos Posto de Coleta:</strong> <br>Hemoce: Av. José Bastos, 3390 - Rodolfo Teófilo, Fortaleza - CE, 60431-086 <br> Fugisan: Barão de Studart, 2626 - Dionísio Torres, Fortaleza - CE, 60120-375
+</div>
+
+<footer id="endereco">
+    
+    <p class="rodape">DESENVOLVIDO POR REBECA PEREIRA</p>
+</footer>
+
 <script src="script"></script>
-<footer id="endereco"><strong>Endereços dos Posto de Coleta:</strong> Hemoce: Av. José Bastos, 3390 - Rodolfo Teófilo, Fortaleza - CE, 60431-086 | Fugisan: Barão de Studart, 2626 - Dionísio Torres, Fortaleza - CE, 60120-375</footer>
-<footer><p class="rodape">DESENVOLVIDO POR REBECA PEREIRA</p></footer>
 </body>
 </html>
