@@ -2,26 +2,23 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: block;
     
 }
 
-main {
-    width: 98vw;
-    height: 100vh;
-    padding: 0;
-}
 
 .header {
     display: flex;
-    background-color: #0707077a;
+    background-color: rgba(0, 0, 0, 0.582);
     padding: 16px;
     justify-content: space-between;
     align-items: center;
-    height: 300px; /*deixar o header como uma faixa larga*/
+    height: 200px; /*deixar o header como uma faixa larga*/
 
 }
 
-.header__logo {
+.header_logo {
     font-size: 36px;
     text-transform: uppercase;
     margin-left: 16px;
@@ -29,28 +26,25 @@ main {
     
 }
 
-header > img {
+header img {
     width: 160px;
     height: 160px;
     border-radius: 15%;
 }
-.header__nav ul {
+.header_nav ul {
     display: flex; /*isto fez com q os itens ficassem lado a lado, e não em coluna*/
     list-style-type: none;
     font-size: 18px;
     gap: 16px; /*isto fez com que ficasse um espaço proporcional entre um item e outro*/
 }
 
-a {
-    text-decoration: none;
-    color: #050508;
-}
 
-li > a {
+li a {
     background-color: black;
     border-radius: 3px;
     color: #f9faf7;
     padding: 8px;
+    text-decoration: none;
 }
 
 a:hover{
@@ -59,7 +53,7 @@ a:hover{
     color: #050508;
 }
 
-
+/*Fim do Cabeçalho*/
 div.container {
     display: flex;
     gap: 16px;
@@ -74,42 +68,49 @@ section {
     padding-bottom: 10px;
 }
 
+img {
+    width: 50px;
+}
+
 .titulo {
-    color: azure;
+    color: black;
     text-align: center;
-    background-color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 8px;
 }
-.cat {
+.categoria {
     padding: 5px;
     width: 250px;
     height: 250px;
     
 }
 
-div.contato {
+#contato {
+    display: flexbox;
     background-color: rgba(247, 247, 8, 0.863);
     width: 100%;
-    height: 300px;
-    
+    height: 300px;  
 }
 
-.ident {
-    
+
+
+h2 {
+    text-align: center;
 }
 
+/*início do rodapé da página*/
 footer {
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.76);
     text-align: center;
-    font-size: small;
-    height: 150px;
-    
+    font-size: small; 
 }
 
-p {
+footer p {
+    display: block;
+    padding: 45px;
+    font-size: 16px;
     text-align: center;
 }
 
