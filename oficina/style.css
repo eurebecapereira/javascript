@@ -13,7 +13,7 @@ body {
 
 .header {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.151);
     padding: 16px;
     justify-content: space-between;
     align-items: center;
@@ -60,13 +60,14 @@ a:hover{
 
 /*navegação imagens*/
 .slider {
+   
     margin: 0 auto;
-    width: 800px;
+    width: 500px;
     height: 400px;
     overflow: hidden;
 }
 .slides {
-    width: 400px;
+    width: 400%;
     height: 400px;
     display: flex;
 }
@@ -80,11 +81,11 @@ a:hover{
  }
 
  .slide img {
-    width: 800px;
+    width: 500px;
  }
  .manual-navigation {
     position: absolute;
-    width: 800px;
+    width: 500px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -125,7 +126,7 @@ a:hover{
 
  .navigation-auto {
     position: absolute;
-    width: 800px;
+    width: 500px;
     margin-top: 360px;
     display: flex;
     justify-content: center;
@@ -150,18 +151,24 @@ a:hover{
 
 /*fim navegação imagens*/
 
-#contato {
-    display: flexbox;
-    background-color: rgba(247, 247, 8, 0.863);
+h2 {
+   padding-top: 15px;
+    text-align: center;
+}
+
+#orcar {
+    background-color: rgba(26, 26, 25, 0.199);
     width: 100%;
     height: 300px;  
 }
 
-
-
-h2 {
-    text-align: center;
+#address {
+   background-color: rgba(0, 0, 0, 0.195);
+   
 }
+
+
+
 
 /*início do rodapé da página*/
 footer {

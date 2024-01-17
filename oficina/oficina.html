@@ -16,12 +16,14 @@
         <nav class="header_nav">
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#contato">Orçamento</a></li>
                 <li><a href="#address">Endereço</a></li>
                 <li><a href="#catalogo">Catálogo</a></li>
             </ul>
         </nav>
     </header>
+
+    
     <div class="slider">
         <div class="slides">
             <!--radio button-->
@@ -73,15 +75,22 @@
         </div>
     </div>
 
-    <div id="contato">
-        <h2>Contato</h2>
-        <div class="nome">
+    <div id="orcar">
+        <h2>SOLICITE SEU ORÇAMENTO</h2>
             <label for="Nome">Nome: </label>
             <input type="text" class="form-control" placeholder="Digite seu nome">
-          </div>
+          
           <div class="msg">
             <label for="mensagem" class="form-label">Mensagem: </label>
-            <textarea class="form-control" rows="3"></textarea>
+            <textarea class="form-control" rows="3" placeholder="Portão social, Portão de garagem, Janela..."></textarea>
+
+            <label for="largura">Digite a largura:</label>
+            <input type="number" name="largura" id="largura">
+
+            <label for="largura">Digite a altura:</label>
+            <input type="number" name="largura" id="largura">
+
+            <input type="submit" value="Enviar">
           </div>
         
     </div>
