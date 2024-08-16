@@ -1,19 +1,20 @@
 
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Arimo', sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
     
     
+    
 }
 
-
+/*início do cabeçalho, arguardar nova logo*/
 .header {
     display: flex;
-    background-color: rgba(226, 230, 14, 0.842);
+    background-color: rgba(243, 220, 9, 0.842);
     padding: 16px;
     justify-content: space-between;
     align-items: center;
@@ -58,52 +59,55 @@ a:hover{
 
 /*Fim do Cabeçalho*/
 
+/*inicio - deixar uma imagem de fundo rolar na tela*/
+div.img-fundo {
+    background-image: url('..imagens/imagemfundo.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+/*fim*/
 
-
-section {
+section .tipos {
    background-color: white;
    display: flex;
+   gap: 32px;
    padding: 25px;
    align-items: center;
+   margin: 0;
 
 }
 
 h2 {
-   padding-top: 15px;
+    padding-top: 15px;
     text-align: center;
 }
 
-#orcar {
-    background-color: rgba(226, 230, 14, 0.842);
-    width: 100%;
-    height: 300px;  
-}
 
-#address {
-   background-color: #e2e60ed7;
-   
-}
+
+
+
 
 img {
    width: 350px;
 }
 
 
-/*início do rodapé da página*/
+/*início do rodapé da página - precisa de ajustes*/
 footer {
-   height: 100px;
+   height: 30px;
    color: black;
-   background-color: #e2e60ed7;
+   background-color: rgba(243, 220, 9, 0.842);
    text-align: center;
-   font-size: small;
+   font-size: 0.5rem;
 
 }
 
+
 footer p {
-   height: 30px;
    display: block;
-   padding: 45px;
-   font-size: 16px;
-   text-align: center;
+   padding: 10px;
+   font-size: 1.5em;
+   text-align: center; 
+   text-transform: uppercase;
 }
 
